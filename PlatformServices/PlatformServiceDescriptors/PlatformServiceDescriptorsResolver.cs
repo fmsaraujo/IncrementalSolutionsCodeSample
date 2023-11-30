@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using System.Reflection;
 
-namespace PlatformServices.PlatformServices;
+namespace PlatformServices.PlatformServiceDescriptors;
 
 [PublicAPI]
 public class PlatformServiceDescriptorsResolver : IPlatformServiceDescriptorsResolver
@@ -22,6 +22,8 @@ public class PlatformServiceDescriptorsResolver : IPlatformServiceDescriptorsRes
     private static IEnumerable<PlatformServiceDescriptor> GetAssemblyDescriptors(Assembly assembly)
     {
         // TODO - Improve this
+        //  - GetCustomAttribute() called twice
+        //  - Collection of PlatformServiceDescriptor instances could be cached to improve subsequent calls
         var platformServiceDefinitions = assembly.ExportedTypes
             .Where(et => et.IsInterface && et.GetCustomAttribute<PlatformServiceAttribute>() is not null);
 

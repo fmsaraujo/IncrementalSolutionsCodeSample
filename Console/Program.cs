@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.Extensions.DependencyInjection;
-using PlatformServices.PlatformServices;
+using PlatformServices.PlatformServiceDescriptors;
 using System.Text;
 
 var serviceCollection = new ServiceCollection();

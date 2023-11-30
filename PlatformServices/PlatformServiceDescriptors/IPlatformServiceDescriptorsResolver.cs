@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 
-namespace PlatformServices.PlatformServices;
+namespace PlatformServices.PlatformServiceDescriptors;
 
 [PublicAPI]
 public interface IPlatformServiceDescriptorsResolver

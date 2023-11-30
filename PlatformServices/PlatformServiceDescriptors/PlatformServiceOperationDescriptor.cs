@@ -1,4 +1,4 @@
-namespace PlatformServices.PlatformServices;
+namespace PlatformServices.PlatformServiceDescriptors;
 
 public class PlatformServiceOperationDescriptor
 {

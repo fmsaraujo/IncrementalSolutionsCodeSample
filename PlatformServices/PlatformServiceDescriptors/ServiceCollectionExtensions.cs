@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PlatformServices.PlatformServices;
+namespace PlatformServices.PlatformServiceDescriptors;
 
 [PublicAPI]
 public static class ServiceCollectionExtensions
